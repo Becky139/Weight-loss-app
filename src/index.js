@@ -3,6 +3,7 @@
 const dotenv = require( "dotenv" );
 const Hapi = require( "@hapi/hapi" );
 
+const plugins = require( "./plugins" );
 const routes = require( "./routes" );
 
 const createServer = async () => {
