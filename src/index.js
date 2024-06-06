@@ -12,6 +12,7 @@ const createServer = async () => {
     host: process.env.HOST || "localhost"
   } );
 
+  await plugins.register( server );
   server.route( routes );
 
   return server;
